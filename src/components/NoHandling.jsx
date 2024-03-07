@@ -4,7 +4,7 @@ function NoHandling() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
 
-  const fetchData = () => {
+  const TarikData = () => {
     fetch('https://api.example.com/data')
       .then(response => response.json())
       .then(result => setData(result))
@@ -13,7 +13,7 @@ function NoHandling() {
 
   return (
     <div>
-      <button onClick={fetchData}>Fetch Data</button>
+      <button onClick={TarikData}>Tarik data</button>
       {error && <p>Error: {error.toString()}</p>}
       {data && (
         <ul>

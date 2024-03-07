@@ -14,9 +14,10 @@ function MyComponent() {
       setData(result);
     } catch (error) {
       setError(error.message);
-      
+      console.error('Error fetching weather data:', error);
     }
   };
+
 
   return (
     <div>

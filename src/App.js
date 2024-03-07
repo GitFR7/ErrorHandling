@@ -5,7 +5,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 // import RuntimeErrorComponent from './components/RuntimeErrorComponent';
 import Counter from './components/Counter'
 import MyComponent from './components/MyComponents';
-import NoHandling from './components/NoHandling';
+// import NoHandling from './components/NoHandling';
 
 function App() {
   return (
@@ -32,12 +32,8 @@ function App() {
     <ErrorBoundary><Counter/></ErrorBoundary>
 
     <hr/>
+    <h2>Example of asynchronous error handling</h2>
     <MyComponent/>
-    <hr/>
-
-    <hr/>
-    <h1>Without error handling</h1>
-    <NoHandling/>
     <hr/>
     
 
