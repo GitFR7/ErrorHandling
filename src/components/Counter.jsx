@@ -22,3 +22,5 @@ class BuggyCounter extends React.Component {
       return <h1 onClick={this.handleClick}>{this.state.counter}</h1>;
     }
   }
+
+  export default BuggyCounter

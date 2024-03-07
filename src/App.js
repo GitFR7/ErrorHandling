@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
 import ErrorBoundary from './components/ErrorBoundary';
-import SyntaxErrorComponent from './components/SyntaxErrorComponent';
-import RuntimeErrorComponent from './components/RuntimeErrorComponent';
+// import SyntaxErrorComponent from './components/SyntaxErrorComponent';
+// import RuntimeErrorComponent from './components/RuntimeErrorComponent';
 import Counter from './components/Counter'
+import MyComponent from './components/MyComponents';
+import NoHandling from './components/NoHandling';
 
 function App() {
   return (
@@ -23,10 +25,22 @@ function App() {
       <Counter/>
       <Counter/>
     </ErrorBoundary>
+
     <hr />
     <p>These two counters are each inside of their own error boundary. So if one crashes, the other is not affected.</p>
     <ErrorBoundary><Counter/></ErrorBoundary>
     <ErrorBoundary><Counter/></ErrorBoundary>
+
+    <hr/>
+    <MyComponent/>
+    <hr/>
+
+    <hr/>
+    <h1>Without error handling</h1>
+    <NoHandling/>
+    <hr/>
+    
+
   </div>
   );
 }
