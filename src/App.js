@@ -1,3 +1,4 @@
+//Ini komentar untuk deteksi Pull Request
 import React from 'react';
 import './App.css';
 import ErrorBoundary from './components/ErrorBoundary';
